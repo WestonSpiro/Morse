@@ -1,0 +1,84 @@
+#!/usr/bin/env python3
+
+def morse(text):
+    for ch in text:
+        if ch == ' ':
+            print(" ")
+        elif ch == 'a':
+            print("A: dot dash")
+        elif ch == 'b':
+            print("B: dash dot dot dot")
+        elif ch == 'c':
+            print("C: dash dot dash dot")
+        elif ch == 'd':
+            print("D: dash dot dot")
+        elif ch == 'e':
+            print("E: dot")
+        elif ch == 'f':
+            print("F: dot dot dash dot")
+        elif ch == 'g':
+            print("G: dash dash dot")
+        elif ch == 'h':
+            print("H: dot dot dot dot")
+        elif ch == 'i':
+            print("I: dot dot")
+        elif ch == 'j':
+            print("J: dot dash dash dash")
+        elif ch == 'k':
+            print("K: dash dot dash")
+        elif ch == 'l':
+            print("L: dot dash dot dot")
+        elif ch == 'm':
+            print("M: dash dash")
+        elif ch == 'n':
+            print("N: dash dot")
+        elif ch == 'o':
+            print("O: dash dash dash")
+        elif ch == 'p':
+            print("P: dot dash dash dot")
+        elif ch == 'q':
+            print("Q: dash dash dot dash")
+        elif ch == 'r':
+            print("R: dot dash dot")
+        elif ch == 's':
+            print("S: dot dot dot")
+        elif ch == 't':
+            print("T: dash")
+        elif ch == 'u':
+            print("U: dot dot dash")
+        elif ch == 'v':
+            print("V: dot dot dot dash")
+        elif ch == 'w':
+            print("W: dot dash dash")
+        elif ch == 'x':
+            print("X: dash dot dot dash")
+        elif ch == 'y':
+            print("Y: dash dot dash dash")
+        elif ch == 'z':
+            print("Z: dash dash dot dot")
+        elif ch == '1':
+            print("1: dot dash dash dash dash")
+        elif ch == '2':
+            print("2: dot dot dash dash dash")
+        elif ch == '3':
+            print("3: dot dot dot dash dash")
+        elif ch == '4':
+            print("4: dot dot dot dot dash")
+        elif ch == '5':
+            print("5: dot dot dot dot dot")
+        elif ch == '6':
+            print("6: dash dot dot dot dot ")
+        elif ch == '7':
+            print("7: dash dash dot dot dot")
+        elif ch == '8':
+            print("8: dash dash dash dot dot")
+        elif ch == '9':
+            print("9: dash dash dash dash dot")
+        elif ch == '0':
+            print("0: dash dash dash dash dash")
+
+text = input("Enter Letters & Numbers: ")
+text = text.lower()
+if text.isalnum() != True:
+    print("Please only enter letters & numbers!")
+morse(text)
