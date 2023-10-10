@@ -76,9 +76,13 @@ def morse(text):
             print("9: dash dash dash dash dot")
         elif ch == '0':
             print("0: dash dash dash dash dash")
-
-text = input("Enter Letters & Numbers: ")
-text = text.lower()
-if text.isalnum() != True:
-    print("Please only enter letters & numbers!")
-morse(text)
+        else:
+            print("Invalid Character")
+            
+while True:
+    text = input("Enter Letters & Numbers: ")
+    text = text.lower()
+    if text.isalnum() != True or text.isspace() != True:
+        morse(text)
+    else:
+        print("Please only enter letters & numbers!")
